@@ -1,0 +1,12 @@
+<svg viewBox="0 0 240 120" xmlns="http://www.w3.org/2000/svg" role="img" aria-hidden="true">
+  <path d="M18 78c-6 0-10-4-10-10 0-5 3-9 8-10l14-3 16-22c6-8 15-13 25-13h46c11 0 21 5 28 14l16 21 18 4c6 1 9 5 9 11 0 6-5 11-11 11H18z"
+        fill="currentColor" opacity="0.16"/>
+  <path d="M18 78c-6 0-10-4-10-10 0-5 3-9 8-10l14-3 16-22c6-8 15-13 25-13h46c11 0 21 5 28 14l16 21 18 4c6 1 9 5 9 11 0 6-5 11-11 11H18z"
+        fill="none" stroke="currentColor" stroke-width="3"/>
+  <path d="M46 55l13-19c3-4 8-7 13-7h44c5 0 10 3 13 7l13 19" fill="none" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="95" y1="29" x2="95" y2="55" stroke="currentColor" stroke-width="3"/>
+  <circle cx="62" cy="80" r="16" fill="#15171A" stroke="currentColor" stroke-width="3"/>
+  <circle cx="62" cy="80" r="5" fill="currentColor"/>
+  <circle cx="176" cy="80" r="16" fill="#15171A" stroke="currentColor" stroke-width="3"/>
+  <circle cx="176" cy="80" r="5" fill="currentColor"/>
+</svg>
