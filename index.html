@@ -124,14 +124,14 @@
         <article class="hw-card reveal">
           <div class="hw-card-tag">02/0X</div>
           <div class="hw-card-window">
-            <img src="assets/img/car-silhouette.svg" alt="" style="width:64%;margin:0 auto;filter:drop-shadow(0 4px 6px rgba(0,0,0,.35))">
+            <img src="assets/img/workshop/cupe-clasico-despues.jpg" alt="Cupé clásico repintado en azul brillante con rines cromados">
           </div>
-          <div class="hw-card-ribbon">DEPORTIVO CUSTOM</div>
+          <div class="hw-card-ribbon">CUPÉ CLÁSICO</div>
           <div class="hw-card-body">
-            <h3>Llantas realistas + base de exhibición</h3>
+            <h3>De pintura desgastada a azul sólido</h3>
             <div class="meta">
-              <span class="chip chip-yellow">Modificación</span>
-              <span class="chip">Detalles premium</span>
+              <span class="chip chip-red">Restauración</span>
+              <span class="chip">Pintura a mano</span>
             </div>
           </div>
         </article>
@@ -238,30 +238,46 @@
         </div>
       </div>
 
-      <!--
-        ⚠️ PLACEHOLDER: reemplazar las imágenes del comparador por fotos reales de "antes" y "después".
-        Reemplaza los src de abajo por, por ejemplo:
-          assets/img/workshop/proyecto-01-antes.jpg
-          assets/img/workshop/proyecto-01-despues.jpg
-      -->
-      <div class="reveal">
-        <div class="compare" id="compare-demo">
-          <div class="before-wrap">
-            <img src="assets/img/workshop/pickup-land-rover-antes.jpg" alt="Antes: pickup Land Rover con pintura desgastada">
-          </div>
-          <div class="after-wrap">
-            <img src="assets/img/workshop/pickup-land-rover-despues.jpg" alt="Después: pickup Land Rover restaurada en tono bronce con techo blanco y rines dorados">
-          </div>
-          <span class="compare-label before">ANTES</span>
-          <span class="compare-label after">DESPUÉS</span>
-          <div class="compare-handle">
-            <div class="compare-grip" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M8 7 4 12l4 5M16 7l4 5-4 5"/></svg>
+      <div class="compare-list reveal">
+        <div class="compare-item">
+          <div class="compare" id="compare-landrover">
+            <div class="before-wrap">
+              <img src="assets/img/workshop/pickup-land-rover-antes.jpg" alt="Antes: pickup Land Rover con pintura desgastada">
             </div>
+            <div class="after-wrap">
+              <img src="assets/img/workshop/pickup-land-rover-despues.jpg" alt="Después: pickup Land Rover restaurada en tono bronce con techo blanco y rines dorados">
+            </div>
+            <span class="compare-label before">ANTES</span>
+            <span class="compare-label after">DESPUÉS</span>
+            <div class="compare-handle">
+              <div class="compare-grip" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M8 7 4 12l4 5M16 7l4 5-4 5"/></svg>
+              </div>
+            </div>
+            <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Deslizar para comparar antes y después de la pickup Land Rover">
           </div>
-          <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Deslizar para comparar antes y después">
+          <p class="compare-caption">Pickup Land Rover — restauración completa.</p>
         </div>
-        <p class="compare-caption">Pickup Land Rover — restauración completa. Desliza para ver la transformación.</p>
+
+        <div class="compare-item">
+          <div class="compare" id="compare-cupe">
+            <div class="before-wrap">
+              <img src="assets/img/workshop/cupe-clasico-antes.jpg" alt="Antes: cupé clásico con pintura verde desgastada y llamas">
+            </div>
+            <div class="after-wrap">
+              <img src="assets/img/workshop/cupe-clasico-despues.jpg" alt="Después: cupé clásico repintado en azul brillante con rines cromados">
+            </div>
+            <span class="compare-label before">ANTES</span>
+            <span class="compare-label after">DESPUÉS</span>
+            <div class="compare-handle">
+              <div class="compare-grip" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M8 7 4 12l4 5M16 7l4 5-4 5"/></svg>
+              </div>
+            </div>
+            <input class="compare-range" type="range" min="0" max="100" value="50" aria-label="Deslizar para comparar antes y después del cupé clásico">
+          </div>
+          <p class="compare-caption">Cupé clásico — repintado en azul sólido.</p>
+        </div>
       </div>
 
       <div class="workshop-cta">

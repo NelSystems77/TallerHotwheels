@@ -352,6 +352,15 @@ section{ position: relative; }
 .process-step h3{ font-family:var(--f-body); font-weight:800; text-transform:none; font-size:1rem; }
 .process-step p{ font-size:.88rem; opacity:.78; margin-top:.35rem; }
 
+.compare-list{
+  display:grid; gap: clamp(2rem,5vw,2.6rem);
+  grid-template-columns: 1fr;
+  margin-bottom: clamp(2.6rem,6vw,3.6rem);
+}
+@media (min-width: 760px){
+  .compare-list{ grid-template-columns: 1fr 1fr; }
+}
+.compare-item{ max-width: 760px; margin-inline:auto; width:100%; }
 .compare{
   position:relative; max-width: 760px; margin-inline:auto;
   border-radius: var(--radius-card); overflow:hidden;
