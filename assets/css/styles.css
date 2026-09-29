@@ -531,6 +531,89 @@ section{ position: relative; }
 .customizer-hint{ font-size:.82rem; opacity:.7; margin-bottom:1rem; }
 .customizer-download{ width:100%; }
 
+/* =========================== 3D CONFIGURATOR =========================== */
+.cfg3d{ background: var(--chrome-900); color:#fff; }
+.cfg3d .section-head p{ max-width: 56ch; }
+.cfg3d-app{
+  max-width: 1080px; margin-inline:auto;
+  display:grid; gap: clamp(1.4rem,4vw,2.2rem);
+  grid-template-columns: 1fr;
+}
+@media (min-width: 860px){
+  .cfg3d-app{ grid-template-columns: 1.3fr 1fr; align-items:start; }
+}
+
+.cfg3d-viewport{
+  position:relative; border-radius: var(--radius-card); overflow:hidden;
+  aspect-ratio: 4/3;
+  background: radial-gradient(120% 120% at 50% 20%, var(--chrome-700), var(--chrome-900));
+  border: 1px solid rgba(255,255,255,.14);
+  box-shadow: 0 18px 40px rgba(0,0,0,.35);
+}
+#cfg3d-canvas{ position:absolute; inset:0; width:100%; height:100%; display:block; touch-action:none; cursor: grab; }
+#cfg3d-canvas:active{ cursor: grabbing; }
+.cfg3d-loading, .cfg3d-fallback{
+  position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
+  text-align:center; padding: 2rem; margin:0;
+  color: rgba(255,255,255,.75); font-weight:700; font-size:.95rem;
+  pointer-events:none;
+}
+.cfg3d-loading[hidden], .cfg3d-fallback[hidden]{ display:none; }
+.cfg3d-fallback{ color: var(--yellow); }
+.cfg3d-hint{
+  position:absolute; left:.8rem; bottom:.8rem;
+  font-size:.72rem; font-weight:700; letter-spacing:.02em;
+  background: rgba(0,0,0,.5); color: rgba(255,255,255,.9);
+  padding:.4rem .7rem; border-radius:999px;
+}
+.cfg3d-viewport-actions{
+  position:absolute; top:.8rem; right:.8rem; display:flex; gap:.5rem;
+}
+.cfg3d-icon-btn{
+  width:38px; height:38px; border-radius:50%;
+  background: rgba(0,0,0,.5); border: 1px solid rgba(255,255,255,.28);
+  color:#fff; display:flex; align-items:center; justify-content:center; cursor:pointer;
+}
+.cfg3d-icon-btn:hover{ background: var(--red); border-color: var(--red-deep); }
+.cfg3d-icon-btn svg{ width:18px; height:18px; }
+
+.cfg3d-panel{
+  background: rgba(255,255,255,.05); border:1px solid rgba(255,255,255,.16);
+  border-radius: var(--radius-card); padding: clamp(1.2rem,3vw,1.6rem);
+}
+.cfg3d-tabs{ display:flex; flex-wrap:wrap; gap:.4rem; margin-bottom:1.1rem; }
+.cfg3d-tab{
+  font-family: var(--f-body); font-weight:800; font-size:.82rem;
+  padding:.5rem .9rem; border-radius:999px; cursor:pointer;
+  background: rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.2); color:#fff;
+}
+.cfg3d-tab.is-active{ background: var(--red); border-color: var(--red-deep); }
+
+.cfg3d-options{ display:flex; flex-wrap:wrap; gap:.6rem; margin-bottom: 1.2rem; }
+.cfg3d-options[hidden]{ display:none; }
+.cfg3d-opt{
+  font-family: var(--f-body); font-weight:700; font-size:.82rem;
+  padding:.6rem 1rem; border-radius: var(--radius-sm); cursor:pointer;
+  background: rgba(255,255,255,.07); border:1px solid rgba(255,255,255,.2); color:#fff;
+}
+.cfg3d-opt:hover{ border-color: var(--yellow); }
+.cfg3d-opt.is-active{ background: var(--yellow); color: var(--ink); border-color: var(--yellow-deep); }
+
+.cfg3d-swatch{
+  width:38px; height:38px; border-radius:50%; padding:0; cursor:pointer;
+  background: var(--sw); border:3px solid rgba(255,255,255,.3);
+}
+.cfg3d-swatch.is-active{ border-color:#fff; box-shadow: 0 0 0 3px var(--red); }
+
+.cfg3d-slider[hidden]{ display:none; }
+.cfg3d-slider label{
+  display:block; font-size:.8rem; font-weight:700; color: rgba(255,255,255,.85);
+  margin-bottom: 1.2rem;
+}
+.cfg3d-slider input[type="range"]{ width:100%; margin-top:.4rem; }
+
+.cfg3d-cta{ width:100%; margin-top:.2rem; justify-content:center; }
+
 /* =========================== ABOUT =========================== */
 .about{
   background: var(--chrome-900); color:#fff;

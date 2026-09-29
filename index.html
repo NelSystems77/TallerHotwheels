@@ -48,6 +48,7 @@
       <a href="#showroom">Showroom</a>
       <a href="#workshop">Workshop</a>
       <a href="#personalizador">Personalizador</a>
+      <a href="#configurador3d">Sala 3D</a>
       <a href="#nosotros">Sobre Nosotros</a>
       <a href="#ubicacion">Ubicación &amp; Envíos</a>
       <a href="#contacto">Contáctanos</a>
@@ -386,6 +387,84 @@
     </div>
   </section>
 
+  <!-- =================== CONFIGURADOR 3D =================== -->
+  <section class="cfg3d section-pad" id="configurador3d">
+    <div class="container">
+      <div class="section-head is-light reveal">
+        <span class="eyebrow">Sala de diseño</span>
+        <h2>Arma tu Hot Wheels en 3D</h2>
+        <p>Un modelo genérico estilo diecast, en 360°: prueba pintura, alerones, aros y llantas antes de traer tu proyecto al taller. No es tu modelo exacto — es tu sala de pruebas.</p>
+      </div>
+
+      <div class="cfg3d-app reveal" data-cfg3d-app>
+        <div class="cfg3d-viewport">
+          <canvas id="cfg3d-canvas" aria-label="Vista 3D del Hot Wheels personalizado"></canvas>
+          <p class="cfg3d-loading" data-cfg3d-loading>Cargando sala 3D…</p>
+          <p class="cfg3d-fallback" data-cfg3d-fallback hidden>Tu navegador no pudo cargar la vista 3D. Probá con Chrome, Edge o Firefox actualizados.</p>
+          <span class="cfg3d-hint">Arrastrá para girar · Rueda del mouse para zoom</span>
+          <div class="cfg3d-viewport-actions">
+            <button type="button" class="cfg3d-icon-btn" data-action="reset-camera" title="Restablecer cámara" aria-label="Restablecer cámara">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg>
+            </button>
+            <button type="button" class="cfg3d-icon-btn" data-action="download-3d" title="Descargar captura" aria-label="Descargar captura">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 16V4M12 4 7 9M12 4l5 5"/><path d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="cfg3d-panel">
+          <div class="cfg3d-tabs" role="tablist">
+            <button type="button" class="cfg3d-tab is-active" data-cfg-tab="pintura">Pintura</button>
+            <button type="button" class="cfg3d-tab" data-cfg-tab="alerones">Alerones</button>
+            <button type="button" class="cfg3d-tab" data-cfg-tab="aros">Aros</button>
+            <button type="button" class="cfg3d-tab" data-cfg-tab="llantas">Llantas</button>
+          </div>
+
+          <div class="cfg3d-options" data-cfg-panel="pintura">
+            <button type="button" class="cfg3d-swatch is-active" data-paint="#E2231C" style="--sw:#E2231C" aria-label="Rojo carreras"></button>
+            <button type="button" class="cfg3d-swatch" data-paint="#0B4FA0" style="--sw:#0B4FA0" aria-label="Azul taller"></button>
+            <button type="button" class="cfg3d-swatch" data-paint="#FFD400" style="--sw:#FFD400" aria-label="Amarillo flama"></button>
+            <button type="button" class="cfg3d-swatch" data-paint="#1B1D20" style="--sw:#1B1D20" aria-label="Negro mate"></button>
+            <button type="button" class="cfg3d-swatch" data-paint="#F4F5F6" style="--sw:#F4F5F6" aria-label="Blanco perla"></button>
+            <button type="button" class="cfg3d-swatch" data-paint="#1F8A3B" style="--sw:#1F8A3B" aria-label="Verde carreras"></button>
+            <button type="button" class="cfg3d-swatch" data-paint="#9CA2A8" style="--sw:#9CA2A8" aria-label="Cromado"></button>
+            <button type="button" class="cfg3d-swatch" data-paint="#C98A00" style="--sw:#C98A00" aria-label="Bronce"></button>
+          </div>
+
+          <div class="cfg3d-options" data-cfg-panel="alerones" hidden>
+            <button type="button" class="cfg3d-opt is-active" data-spoiler="none">Ninguno</button>
+            <button type="button" class="cfg3d-opt" data-spoiler="gt">Alerón GT</button>
+            <button type="button" class="cfg3d-opt" data-spoiler="lip">Alerón Bajo</button>
+          </div>
+
+          <div class="cfg3d-options" data-cfg-panel="aros" hidden>
+            <button type="button" class="cfg3d-opt is-active" data-rim="classic">Rin Clásico</button>
+            <button type="button" class="cfg3d-opt" data-rim="chrome">Cromado 5 Radios</button>
+            <button type="button" class="cfg3d-opt" data-rim="sport">Deportivo</button>
+          </div>
+          <div class="cfg3d-slider" data-cfg-panel="aros" hidden>
+            <label>Diámetro del aro
+              <input type="range" data-cfg-ctrl="rimSize" min="70" max="130" value="100">
+            </label>
+          </div>
+
+          <div class="cfg3d-options" data-cfg-panel="llantas" hidden>
+            <button type="button" class="cfg3d-opt is-active" data-tire="street">Calle</button>
+            <button type="button" class="cfg3d-opt" data-tire="mt">MT Todoterreno</button>
+            <button type="button" class="cfg3d-opt" data-tire="slick">Slick</button>
+          </div>
+          <div class="cfg3d-slider" data-cfg-panel="llantas" hidden>
+            <label>Ancho de llanta
+              <input type="range" data-cfg-ctrl="tireWidth" min="60" max="150" value="100">
+            </label>
+          </div>
+
+          <a class="btn btn-yellow cfg3d-cta" href="https://wa.me/50688285668?text=Hola%2C%20arm%C3%A9%20un%20dise%C3%B1o%20en%20la%20sala%203D%20y%20quiero%20cotizarlo" target="_blank" rel="noopener">Cotizar este diseño</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- =================== SOBRE NOSOTROS =================== -->
   <section class="about section-pad" id="nosotros">
     <div class="container about-grid">
@@ -496,6 +575,7 @@
       <a href="#showroom">Showroom</a>
       <a href="#workshop">Workshop</a>
       <a href="#personalizador">Personalizador</a>
+      <a href="#configurador3d">Sala 3D</a>
       <a href="#nosotros">Sobre nosotros</a>
       <a href="https://wa.me/50688285668" target="_blank" rel="noopener">WhatsApp</a>
     </div>
@@ -503,5 +583,14 @@
 </footer>
 
 <script src="assets/js/main.js"></script>
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+    "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+  }
+}
+</script>
+<script type="module" src="assets/js/configurator3d.js"></script>
 </body>
 </html>
