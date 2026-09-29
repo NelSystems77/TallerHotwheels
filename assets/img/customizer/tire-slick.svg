@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <radialGradient id="slick" cx=".4" cy=".35" r=".85">
+      <stop offset="0" stop-color="#2b2b2b"/>
+      <stop offset="1" stop-color="#050505"/>
+    </radialGradient>
+    <radialGradient id="deepdish" cx=".35" cy=".3" r=".8">
+      <stop offset="0" stop-color="#F4F5F6"/>
+      <stop offset=".6" stop-color="#9CA2A8"/>
+      <stop offset="1" stop-color="#4A4E54"/>
+    </radialGradient>
+    <filter id="ds" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000" flood-opacity=".4"/>
+    </filter>
+  </defs>
+  <g filter="url(#ds)">
+    <circle cx="100" cy="100" r="96" fill="url(#slick)"/>
+    <circle cx="100" cy="100" r="58" fill="url(#deepdish)" stroke="#1B1D20" stroke-width="2"/>
+    <g stroke="#E2231C" stroke-width="4" stroke-linecap="round">
+      <line x1="100" y1="52" x2="100" y2="80"/>
+      <line x1="100" y1="52" x2="100" y2="80" transform="rotate(72 100 100)"/>
+      <line x1="100" y1="52" x2="100" y2="80" transform="rotate(144 100 100)"/>
+      <line x1="100" y1="52" x2="100" y2="80" transform="rotate(216 100 100)"/>
+      <line x1="100" y1="52" x2="100" y2="80" transform="rotate(288 100 100)"/>
+    </g>
+    <circle cx="100" cy="100" r="15" fill="url(#deepdish)" stroke="#E2231C" stroke-width="2"/>
+  </g>
+</svg>

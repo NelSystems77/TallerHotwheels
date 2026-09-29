@@ -47,6 +47,7 @@
       <a href="#inicio">Inicio</a>
       <a href="#showroom">Showroom</a>
       <a href="#workshop">Workshop</a>
+      <a href="#personalizador">Personalizador</a>
       <a href="#nosotros">Sobre Nosotros</a>
       <a href="#ubicacion">Ubicación &amp; Envíos</a>
       <a href="#contacto">Contáctanos</a>
@@ -292,6 +293,99 @@
     </div>
   </section>
 
+  <!-- =================== PERSONALIZADOR =================== -->
+  <section class="customizer section-pad" id="personalizador">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Pruébalo antes de traerlo</span>
+        <h2>Personaliza tu Hot Wheels</h2>
+        <p>Sube una foto de tu modelo y pruébale alerones, aros y llantas antes de pasarlo por el taller. Todo pasa en tu propio navegador: tu foto nunca se sube a ningún servidor.</p>
+      </div>
+
+      <div class="customizer-app reveal">
+
+        <div class="customizer-upload" data-customizer-upload>
+          <input type="file" id="customizer-file" accept="image/*" class="visually-hidden">
+          <label class="customizer-drop" for="customizer-file" tabindex="0">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 16V4M12 4 7 9M12 4l5 5"/><path d="M4 16v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+            <strong>Sube una foto de tu Hot Wheels</strong>
+            <span>Tócala o arrástrala aquí — JPG o PNG</span>
+          </label>
+        </div>
+
+        <div class="customizer-editor" data-customizer-editor hidden>
+          <div class="customizer-stage-col">
+            <div class="customizer-stage" id="customizer-stage">
+              <img class="customizer-photo" id="customizer-photo" alt="Foto de tu Hot Wheels">
+            </div>
+            <div class="customizer-stage-actions">
+              <button type="button" class="cst-btn" data-action="undo">Deshacer</button>
+              <button type="button" class="cst-btn" data-action="clear">Quitar piezas</button>
+              <button type="button" class="cst-btn" data-action="change-photo">Cambiar foto</button>
+            </div>
+          </div>
+
+          <div class="customizer-panel">
+            <div class="customizer-tabs" role="tablist">
+              <button type="button" class="cst-tab is-active" data-cat-tab="alerones">Alerones</button>
+              <button type="button" class="cst-tab" data-cat-tab="aros">Aros</button>
+              <button type="button" class="cst-tab" data-cat-tab="llantas">Llantas</button>
+            </div>
+
+            <div class="customizer-parts" data-cat-panel="alerones">
+              <button type="button" class="cst-part" data-part="spoiler-gt">
+                <img src="assets/img/customizer/spoiler-gt.svg" alt="">
+                <span>Alerón GT</span>
+              </button>
+              <button type="button" class="cst-part" data-part="spoiler-sport">
+                <img src="assets/img/customizer/spoiler-sport.svg" alt="">
+                <span>Alerón Bajo</span>
+              </button>
+            </div>
+            <div class="customizer-parts" data-cat-panel="aros" hidden>
+              <button type="button" class="cst-part" data-part="rim-chrome">
+                <img src="assets/img/customizer/rim-chrome.svg" alt="">
+                <span>Aro Cromado</span>
+              </button>
+              <button type="button" class="cst-part" data-part="rim-sport">
+                <img src="assets/img/customizer/rim-sport.svg" alt="">
+                <span>Aro Deportivo</span>
+              </button>
+            </div>
+            <div class="customizer-parts" data-cat-panel="llantas" hidden>
+              <button type="button" class="cst-part" data-part="tire-mt">
+                <img src="assets/img/customizer/tire-mt.svg" alt="">
+                <span>Llanta MT</span>
+              </button>
+              <button type="button" class="cst-part" data-part="tire-slick">
+                <img src="assets/img/customizer/tire-slick.svg" alt="">
+                <span>Llanta Slick</span>
+              </button>
+            </div>
+
+            <div class="customizer-selected" data-customizer-selected hidden>
+              <h4>Pieza seleccionada</h4>
+              <label>Tamaño
+                <input type="range" data-ctrl="size" min="10" max="60" value="26">
+              </label>
+              <label>Rotación
+                <input type="range" data-ctrl="rotate" min="-180" max="180" value="0">
+              </label>
+              <div class="customizer-selected-actions">
+                <button type="button" class="cst-btn" data-action="front">Al frente</button>
+                <button type="button" class="cst-btn" data-action="back">Atrás</button>
+                <button type="button" class="cst-btn cst-btn-danger" data-action="delete">Eliminar</button>
+              </div>
+            </div>
+
+            <p class="customizer-hint">Toca una pieza para añadirla, arrástrala sobre la foto para acomodarla y usa los controles para girarla o cambiar su tamaño.</p>
+            <button type="button" class="btn btn-yellow customizer-download" data-action="download">Descargar mi diseño</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- =================== SOBRE NOSOTROS =================== -->
   <section class="about section-pad" id="nosotros">
     <div class="container about-grid">
@@ -401,6 +495,7 @@
     <div class="foot-links">
       <a href="#showroom">Showroom</a>
       <a href="#workshop">Workshop</a>
+      <a href="#personalizador">Personalizador</a>
       <a href="#nosotros">Sobre nosotros</a>
       <a href="https://wa.me/50688285668" target="_blank" rel="noopener">WhatsApp</a>
     </div>

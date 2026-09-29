@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <filter id="ds" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000" flood-opacity=".4"/>
+    </filter>
+  </defs>
+  <g filter="url(#ds)">
+    <circle cx="100" cy="100" r="96" fill="#0c0c0d"/>
+    <circle cx="100" cy="100" r="72" fill="#1B1D20" stroke="#4A4E54" stroke-width="2"/>
+    <g>
+      <rect x="96" y="30" width="8" height="40" rx="3" fill="#E2231C"/>
+      <rect x="96" y="30" width="8" height="40" rx="3" fill="#E2231C" transform="rotate(45 100 100)"/>
+      <rect x="96" y="30" width="8" height="40" rx="3" fill="#E2231C" transform="rotate(90 100 100)"/>
+      <rect x="96" y="30" width="8" height="40" rx="3" fill="#E2231C" transform="rotate(135 100 100)"/>
+      <rect x="96" y="30" width="8" height="40" rx="3" fill="#E2231C" transform="rotate(180 100 100)"/>
+      <rect x="96" y="30" width="8" height="40" rx="3" fill="#E2231C" transform="rotate(225 100 100)"/>
+      <rect x="96" y="30" width="8" height="40" rx="3" fill="#E2231C" transform="rotate(270 100 100)"/>
+      <rect x="96" y="30" width="8" height="40" rx="3" fill="#E2231C" transform="rotate(315 100 100)"/>
+    </g>
+    <circle cx="100" cy="100" r="17" fill="#F4F5F6" stroke="#1B1D20" stroke-width="2.5"/>
+    <circle cx="100" cy="100" r="5" fill="#1B1D20"/>
+  </g>
+</svg>
